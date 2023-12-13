@@ -39,3 +39,35 @@ body {
     text-align: center;
     margin-top: 20px;
     }
+
+    .grid-container {
+      display: flex;
+      justify-content:center;
+      gap: 5px; /* Espacio entre los cuadritos */
+      
+    }
+  
+    .grid-item {
+      background-color: #ccc; /* Color de fondo de los cuadritos */
+      border: 1px solid #000; /* Borde de los cuadritos */
+      padding: 10px; /* Espacio interno de los cuadritos */
+      text-align: center; /* Centrar el texto en los cuadritos */
+      width: 20px;
+      height: 20px;
+    }
+
+  #msg {
+    font-size: 24px; 
+    font-weight: bold;
+  }
+
+  #msg.ganaste {
+    color: green; 
+  }
+
+  #msg.perdiste {
+    color: red; 
+  }
+
+
+ 
