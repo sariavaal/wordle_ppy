@@ -1,73 +1,89 @@
 /* style.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-    }
-    
-    h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 50px;
-    }
-    
-    input {
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    width: 200px;
-    }
-    
-    button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    }
-    
-    #msg {
-    text-align: center;
-    margin-top: 20px;
-    }
-    
-    #mensajes {
-    text-align: center;
-    margin-top: 20px;
-    }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
 
-    .grid-container {
-      display: flex;
-      justify-content:center;
-      gap: 5px; /* Espacio entre los cuadritos */
-      
-    }
-  
-    .grid-item {
-      background-color: #ccc; /* Color de fondo de los cuadritos */
-      border: 1px solid #000; /* Borde de los cuadritos */
-      padding: 10px; /* Espacio interno de los cuadritos */
-      text-align: center; /* Centrar el texto en los cuadritos */
-      width: 20px;
-      height: 20px;
-    }
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
 
-  #msg {
-    font-size: 24px; 
-    font-weight: bold;
-  }
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 200px;
+}
 
-  #msg.ganaste {
-    color: green; 
-  }
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 
-  #msg.perdiste {
-    color: red; 
-  }
+#msg {
+  text-align: center;
+  margin-top: 20px;
+}
 
+#mensajes {
+  text-align: center;
+  margin-top: 20px;
+}
 
- 
+.grid-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Espacio entre los cuadritos */
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.grid-item {
+  background-color: #ccc; /* Color de fondo de los cuadritos */
+  border: 1px solid #000; /* Borde de los cuadritos */
+  padding: 10px; /* Espacio interno de los cuadritos */
+  text-align: center; /* Centrar el texto en los cuadritos */
+  width: 20px;
+  height: 20px;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+}
+#msg {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#msg.ganaste {
+  color: green;
+}
+
+#msg.perdiste {
+  color: red;
+}
+
+.green {
+  background-color:#66f066;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+.gray {
+  background-color:#e4e1e1;
+}
