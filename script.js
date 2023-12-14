@@ -43,13 +43,14 @@ function compararLetras(palabra, palabraAleatoria) {
   let fallos = 0;
   let letraEnPosicionEq = 0;
   let letras = new Array(palabra.length).fill('');
-  for (let i = 0; i < palabra.length; i++) {
-    if (palabra[i] === palabraAleatoria[i]) {
+  for (let i = 0; i < palabraAleatoria.length; i++) {
+    if (palabraAleatoria[i] === palabra[i]) {
       letras[i] = 'green';
       aciertos++;
-    } else if (palabra.includes(palabraAleatoria[i])) {
+    } else if (palabraAleatoria.slice(i).includes(palabra[i])) {
       letras[i] = 'yellow';
       letraEnPosicionEq++;
+      console.log('atamo', palabra, palabraAleatoria[i])
     } else {
       letras[i] = 'gray';
       fallos++;
